@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <button id="modoNocturnoBtn">🌙 Modo Nocturno</button>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Capítulo II - Análisis de Datos y Percepción Estudiantil</title>
@@ -50,6 +51,14 @@
   <div style="clear: both;"></div>
   <p style="text-align: center; margin: 5px 0 0 0;">© 2025 Universidad Militar Nueva Granada</p>
 </footer>
-
+<script>
+  const btn = document.getElementById("modoNocturnoBtn");
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("modo-nocturno");
+    btn.textContent = document.body.classList.contains("modo-nocturno")
+      ? "☀️ Modo Claro"
+      : "🌙 Modo Nocturno";
+  });
+</script>
 </body>
 </html>
