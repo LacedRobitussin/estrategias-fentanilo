@@ -1,0 +1,263 @@
+/* Estilo general */
+body {
+  background-color: #fdf6e3;
+  color: #130456;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 40px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #032878;
+  border-bottom: 2px solid #0c0101;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+nav ul li {
+  background-color: #e8e6d8;
+  border-radius: 6px;
+  padding: 8px 14px;
+  transition: background-color 0.3s;
+}
+
+nav ul li:hover {
+  background-color: #d4d2c0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #032878;
+  font-weight: bold;
+}
+
+/* Secciones */
+section {
+  background-color: #fffef5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 25px 30px;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  color: #2e225c;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 8px;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1.3rem;
+  color: #000000;
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.map-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.map-grid-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.map-img {
+  width: 100%;
+  height: 200px; /* Fijamos altura */
+  object-fit: cover; /* Recorta la imagen para que llene el espacio */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.map-grid-section h2 {
+  font-size: 1.5rem;
+  color: #2e225c;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 8px;
+}
+
+.marco-box {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#modoNocturnoBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #2c2f36;
+  color: #f0f0f0;
+  border: 1px solid #4e5b6e;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#modoNocturnoBtn:hover {
+  background-color: #3a3e47;
+  color: #ffffff;
+}
+
+/* Estilo general del modo nocturno */
+.modo-nocturno {
+  background-color: #1c1f26;
+  color: #c0cad4;
+}
+
+.modo-nocturno header,
+.modo-nocturno nav,
+.modo-nocturno section,
+.modo-nocturno footer {
+  background-color: #23262d;
+  color: #c0cad4;
+}
+
+.modo-nocturno a {
+  color: #a1bfff;
+  text-decoration: underline;
+}
+
+.modo-nocturno h1,
+.modo-nocturno h2,
+.modo-nocturno h3 {
+  color: #e4e8ec;
+}
+
+.modo-nocturno .map-grid figure figcaption,
+.modo-nocturno .marco-box,
+.modo-nocturno .map-grid-section {
+  background-color: #2b2f38;
+  color: #c0cad4;
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Tabla Metodología */
+.tabla-metodologia {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.tabla-metodologia th,
+.tabla-metodologia td {
+  border: 1px solid #444;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-metodologia th {
+  background-color: #222;
+  color: #fff;
+  font-weight: 600;
+}
+
+.tabla-metodologia tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+<style>
+    footer {
+      margin-top: 40px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .footer-top p {
+      margin: 0;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</footer>
