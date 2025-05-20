@@ -9,6 +9,7 @@
 <body>
 
 <header>
+  <button id="modoNocturnoBtn">🌙 Modo Nocturno</button>
   <img src="logo-universidad.png" alt="Logo Universidad" class="logo" />
   <h1>Información del Capítulo I</h1>
 </header>
@@ -36,6 +37,14 @@
   <div style="clear: both;"></div>
   <p style="text-align: center; margin: 5px 0 0 0;">© 2025 Universidad Militar Nueva Granada</p>
 </footer>
-
+<script>
+  const btn = document.getElementById("modoNocturnoBtn");
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("modo-nocturno");
+    btn.textContent = document.body.classList.contains("modo-nocturno")
+      ? "☀️ Modo Claro"
+      : "🌙 Modo Nocturno";
+  });
+</script>
 </body>
 </html>
